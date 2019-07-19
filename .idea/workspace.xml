@@ -89,16 +89,21 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/testa.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/HelloController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/demo/HelloControllertest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/demo/HelloControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/HelloController.java" />
       </list>
     </option>
   </component>
@@ -242,7 +247,7 @@
       <updated>1563333476507</updated>
       <workItem from="1563333479303" duration="1164000" />
       <workItem from="1563334685245" duration="7539000" />
-      <workItem from="1563434288759" duration="2293000" />
+      <workItem from="1563434288759" duration="3373000" />
     </task>
     <servers />
   </component>
@@ -275,9 +280,9 @@
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32884097" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" visible="true" weight="0.24946237" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -391,6 +396,16 @@
             <element signature="imports" expanded="true" />
             <element signature="e#529#530#0" expanded="true" />
             <element signature="e#559#560#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -20,4 +20,7 @@ public class HelloController {
     public String sayHello(){
         return "hello";
     }
+
+    @RequestMapping(value = "/bye",method = RequestMethod.GET)
+    public String sayBye(){return "bye";}
 }
