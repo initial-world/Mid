@@ -4,9 +4,10 @@
 .mvn
 target
 .iml
-HELP
-pom
+HELP.md
 mvnw
+mvnw.cmd
+pom.xml
 # .gitignore for maven 
 target/
 *.releaseBackup
