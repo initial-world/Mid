@@ -1,6 +1,0 @@
-
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éŒ…üüÿÿÿÿ8´ÙÐíÂ-
-Usquid:S1135"2Complete the task associated to this TODO comment.(÷¡à‡ýÿÿÿÿ8ù¾œÀÀ-
-ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”¨¨Ú8áº…íÂ-
-lsquid:UselessImportCheck"ARemove this unused import 'org.springframework.http.HttpRequest'.(ÌÖÁÛ8ËÝÉíÂ-
-vsquid:UselessImportCheck"FRemove this unused import 'com.example.demo.Service.HelloServiceImpl'.(ÌÎÕÞûÿÿÿÿ8”åÂíÂ-

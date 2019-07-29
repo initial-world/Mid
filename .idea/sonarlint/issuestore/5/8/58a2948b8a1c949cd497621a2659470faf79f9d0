@@ -1,5 +1,0 @@
-
-Xsquid:S2094"BRemove this empty class, write its code or make it an "interface".(¿£«<
-Nsquid:S1135"2Complete the task associated to this TODO comment.(÷¡à‡ýÿÿÿÿ
-wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°·…úÿÿÿÿ
-nsquid:UselessImportCheck"JRemove this unused import 'io.netty.channel.ChannelInboundHandlerAdapter'.(þ‘Â³
