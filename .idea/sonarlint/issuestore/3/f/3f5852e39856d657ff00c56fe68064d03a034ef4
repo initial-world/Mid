@@ -1,0 +1,6 @@
+
+_squid:S1192"HDefine a constant instead of duplicating this literal "success" 3 times.(ùØ
+isquid:S1192"SDefine a constant instead of duplicating this literal "è¿™æ˜¯å‘é€çš„ç¬¬" 3 times.(»šĞ`
+Nsquid:S1135	"2Complete the task associated to this TODO comment.(÷¡à‡ıÿÿÿÿ
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—ûâ
+xsquid:UselessImportCheck"TRemove this unnecessary import: same package classes are always implicitly imported.(ö Èâ
