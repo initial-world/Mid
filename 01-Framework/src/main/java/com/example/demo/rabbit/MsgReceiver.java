@@ -22,7 +22,7 @@ public class MsgReceiver {
 
     @RabbitHandler
     public void process(String content, Channel channel, Message message) {
-        logger.info("接收处理队列A当中的消息： {}" , content);
+        logger.info("接收处理队列A当中的消息： {}", content);
         //告诉服务器收到这条消息 已经被我消费了 可以在队列删掉 这样以后就不会再发了 否则消息服务器以为这条消息没处理掉 后续还会在发
         try {
             channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);

@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 //@RestController
 public class HelloControllerTest {
     /**
-     * @Descrption TODO
-     * @Author chenxin
      * @param
      * @return java.lang.String
+     * @Descrption TODO
+     * @Author chenxin
      */
-    @RequestMapping(value = "/hello",method = RequestMethod.GET)
-    public String sayHello(){
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    public String sayHello() {
         return "hello";
     }
 }

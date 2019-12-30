@@ -18,7 +18,8 @@ import javax.sql.DataSource;
  * @Author chenxin
  * @Date 2019/7/26
  * @Time 18:02
-// */
+ * //
+ */
 @Configuration
 @MapperScan(basePackages = PgsqlDataSourceConfig.PACKAGE, sqlSessionFactoryRef = "pgSqlSessionFactory")
 public class PgsqlDataSourceConfig {

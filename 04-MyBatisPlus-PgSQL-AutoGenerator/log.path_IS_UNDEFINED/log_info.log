@@ -1,0 +1,39 @@
+2019-08-22 09:05:19.033 [main] INFO  com.springboot.demo.DemoApplication - Starting DemoApplication on chenxin with PID 12688 (D:\Projects\01-MyProject\04-MyBatisPlus-PgSQL-AutoGenerator\target\classes started by chenxin in D:\Projects\01-MyProject\04-MyBatisPlus-PgSQL-AutoGenerator)
+2019-08-22 09:05:19.033 [main] INFO  com.springboot.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2019-08-22 09:05:19.939 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f99c0275] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 09:05:20.204 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-08-22 09:05:20.220 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-22 09:05:20.220 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-22 09:05:20.220 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-22 09:05:20.392 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-22 09:05:20.392 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1313 ms
+2019-08-22 09:05:20.454 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2019-08-22 09:05:20.486 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-22 09:06:33.598 [main] INFO  com.springboot.demo.DemoApplication - Starting DemoApplication on chenxin with PID 14796 (D:\Projects\01-MyProject\04-MyBatisPlus-PgSQL-AutoGenerator\target\classes started by chenxin in D:\Projects\01-MyProject\04-MyBatisPlus-PgSQL-AutoGenerator)
+2019-08-22 09:06:33.598 [main] INFO  com.springboot.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2019-08-22 09:06:34.473 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bb9e5fc7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 09:06:34.723 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-08-22 09:06:34.738 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-22 09:06:34.754 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-22 09:06:34.754 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-22 09:06:34.926 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-22 09:06:34.926 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1281 ms
+2019-08-22 09:06:34.988 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2019-08-22 09:06:35.004 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-22 09:07:15.701 [main] INFO  com.springboot.demo.DemoApplication - Starting DemoApplication on chenxin with PID 2772 (D:\Projects\01-MyProject\04-MyBatisPlus-PgSQL-AutoGenerator\target\classes started by chenxin in D:\Projects\01-MyProject\04-MyBatisPlus-PgSQL-AutoGenerator)
+2019-08-22 09:07:15.701 [main] INFO  com.springboot.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2019-08-22 09:07:16.670 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$35ccdb7d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 09:07:16.935 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-08-22 09:07:16.951 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-22 09:07:16.967 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-22 09:07:16.967 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-22 09:07:17.138 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-22 09:07:17.138 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1390 ms
+2019-08-22 09:07:17.201 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2019-08-22 09:07:17.232 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.

@@ -21,7 +21,7 @@ public class Service01Application {
     String port;
 
     @RequestMapping("/hi")
-    public String home(@RequestParam(value = "name",defaultValue = "cx") String name){
-        return "hi, "+name+",from port:"+port;
+    public String home(@RequestParam(value = "name", defaultValue = "cx") String name) {
+        return "hi, " + name + ",from port:" + port;
     }
 }

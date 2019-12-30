@@ -24,7 +24,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig implements WebMvcConfigurer {
     @Bean
-    public Docket apiConfig(){
+    public Docket apiConfig() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 //过滤的接口
@@ -39,7 +39,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
     }
 
     @Override
-    public void addResourceHandlers(ResourceHandlerRegistry resourceHandlerRegistry){
+    public void addResourceHandlers(ResourceHandlerRegistry resourceHandlerRegistry) {
         resourceHandlerRegistry.addResourceHandler("/webjars/**")
                 .addResourceLocations("classpath:/META-INF/resources/webjars/");
         resourceHandlerRegistry.addResourceHandler("swagger-ui.html")

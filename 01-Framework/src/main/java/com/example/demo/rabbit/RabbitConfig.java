@@ -52,7 +52,7 @@ public class RabbitConfig {
 
     @Bean
     public ConnectionFactory connectionFactory() {
-        CachingConnectionFactory connectionFactory = new CachingConnectionFactory(host,port);
+        CachingConnectionFactory connectionFactory = new CachingConnectionFactory(host, port);
         connectionFactory.setUsername(username);
         connectionFactory.setPassword(password);
         connectionFactory.setVirtualHost("/");
@@ -72,10 +72,10 @@ public class RabbitConfig {
      * 针对消费者配置
      * 1. 设置交换机类型
      * 2. 将队列绑定到交换机
-     FanoutExchange: 将消息分发到所有的绑定队列，无routingkey的概念
-     HeadersExchange ：通过添加属性key-value匹配
-     DirectExchange:按照routingkey分发到指定队列
-     TopicExchange:多关键字匹配
+     * FanoutExchange: 将消息分发到所有的绑定队列，无routingkey的概念
+     * HeadersExchange ：通过添加属性key-value匹配
+     * DirectExchange:按照routingkey分发到指定队列
+     * TopicExchange:多关键字匹配
      */
     @Bean
     public DirectExchange defaultExchange() {
@@ -89,6 +89,7 @@ public class RabbitConfig {
 
     /**
      * 获取队列A
+     *
      * @return
      */
     @Bean
@@ -109,13 +110,14 @@ public class RabbitConfig {
     }
 
     @Bean
-    public Binding bindingB(){
+    public Binding bindingB() {
         return BindingBuilder.bind(queueB()).to(defaultExchange()).with(RabbitConfig.ROUTINGKEY_B);
     }
 
     /**
      * 配置fanout_exchange
      * Fanout 就是我们熟悉的广播模式，给Fanout交换机发送消息，绑定了这个交换机的所有队列都收到这个消息。
+     *
      * @return
      */
     @Bean
@@ -125,9 +127,10 @@ public class RabbitConfig {
 
     //把所有的队列都绑定到这个交换机上去
     @Bean
-    Binding bindingExchangeA(Queue queueA,FanoutExchange fanoutExchange) {
+    Binding bindingExchangeA(Queue queueA, FanoutExchange fanoutExchange) {
         return BindingBuilder.bind(queueA).to(fanoutExchange);
     }
+
     @Bean
     Binding bindingExchangeB(Queue queueB, FanoutExchange fanoutExchange) {
         return BindingBuilder.bind(queueB).to(fanoutExchange);

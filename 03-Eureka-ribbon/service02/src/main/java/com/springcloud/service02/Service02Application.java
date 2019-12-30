@@ -16,12 +16,13 @@ public class Service02Application {
     public static void main(String[] args) {
         SpringApplication.run(Service02Application.class, args);
     }
+
     @Value("${server.port}")
     String port;
 
     @RequestMapping("/hi")
-    public String home(@RequestParam(value = "name",defaultValue = "cx") String name){
+    public String home(@RequestParam(value = "name", defaultValue = "cx") String name) {
 
-        return "hi, "+name+",from port:"+port;
+        return "hi, " + name + ",from port:" + port;
     }
 }

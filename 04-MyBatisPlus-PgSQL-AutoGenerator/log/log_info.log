@@ -1,0 +1,18 @@
+2019-09-27 21:44:13.335 [main] INFO  c.springboot.demo.service.impl.TestServiceImplTest - Starting TestServiceImplTest on chenxin with PID 17176 (started by chenxin in D:\Projects\01-MyProject\04-MyBatisPlus-PgSQL-AutoGenerator)
+2019-09-27 21:44:13.340 [main] INFO  c.springboot.demo.service.impl.TestServiceImplTest - No active profile set, falling back to default profiles: default
+2019-09-27 21:44:14.712 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6604d03c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-27 21:44:16.118 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-09-27 21:44:16.121 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2019-09-27 21:44:16.123 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-09-27 21:44:16.138 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-27 21:44:25.676 [main] INFO  c.springboot.demo.service.impl.TestServiceImplTest - Starting TestServiceImplTest on chenxin with PID 10460 (started by chenxin in D:\Projects\01-MyProject\04-MyBatisPlus-PgSQL-AutoGenerator)
+2019-09-27 21:44:25.678 [main] INFO  c.springboot.demo.service.impl.TestServiceImplTest - No active profile set, falling back to default profiles: default
+2019-09-27 21:44:27.244 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd7674df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-27 21:44:28.632 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-09-27 21:44:28.635 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2019-09-27 21:44:28.637 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-09-27 21:44:28.648 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.

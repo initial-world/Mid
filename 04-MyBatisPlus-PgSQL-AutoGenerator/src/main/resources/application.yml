@@ -52,3 +52,9 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: false
+
+
+#配置日志
+logging:
+  config: classpath:logback-spring.xml
+  path: D://Projects//01-MyProject//04-MyBatisPlus-PgSQL-AutoGenerator//log

@@ -17,7 +17,7 @@ public class DemoController {
     DemoService demoService;
 
     @GetMapping(value = "/hi")
-    public String hi(){
+    public String hi() {
         return demoService.hiService();
     }
 }

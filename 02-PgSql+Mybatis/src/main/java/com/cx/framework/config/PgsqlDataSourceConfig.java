@@ -1,4 +1,4 @@
-package com.cx.framework;
+package com.cx.framework.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -18,13 +18,14 @@ import javax.sql.DataSource;
  * @Author chenxin
  * @Date 2019/7/26
  * @Time 18:02
-// */
+ * //
+ */
 @Configuration
 @MapperScan(basePackages = PgsqlDataSourceConfig.PACKAGE, sqlSessionFactoryRef = "pgSqlSessionFactory")
 public class PgsqlDataSourceConfig {
 
-    static final String PACKAGE = "com.cx.framwork.dao";
-    static final String MAPPER_LOCATION = "classpath:Mapper/*.xml";
+    static final String PACKAGE = "com.springboot.demo.mapper";
+    static final String MAPPER_LOCATION = "classpath:mapper/**/*.xml";
 
     @Value("${pgsql.datasource.url}")
     private String url;

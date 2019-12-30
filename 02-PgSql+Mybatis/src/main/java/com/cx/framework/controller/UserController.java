@@ -26,12 +26,12 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @ApiOperation(value = "hello测试",notes="this is notes")
+    @ApiOperation(value = "hello测试", notes = "this is notes")
     @ApiImplicitParams({
-            @ApiImplicitParam(paramType = "query",name = "Id",value = "用户Id",required = true,dataType = "Integer")
+            @ApiImplicitParam(paramType = "query", name = "Id", value = "用户Id", required = true, dataType = "Integer")
     })
     @GetMapping("/hello")
-    public void sayHello(HttpServletRequest request, HttpServletResponse response)throws IOException {
+    public void sayHello(HttpServletRequest request, HttpServletResponse response) throws IOException {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("application/json;charset=UTF-8");
         User user = userService.getUser();
@@ -41,5 +41,7 @@ public class UserController {
 
 
     @GetMapping("/bye")
-    public String sayBye(){return "bye";}
+    public String sayBye() {
+        return "bye";
+    }
 }

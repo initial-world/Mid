@@ -15,8 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class FeignTestController {
     @Autowired
     FeignTestService feignTestService;
+
     @GetMapping(value = "/hi")
-    public String sayHi(@RequestParam String name){
+    public String sayHi(@RequestParam String name) {
         return feignTestService.sayHi(name);
     }
 }

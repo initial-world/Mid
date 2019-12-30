@@ -14,7 +14,8 @@ import org.springframework.web.client.RestTemplate;
 public class DemoService {
     @Autowired
     RestTemplate restTemplate;
-    public String hiService(){
-        return restTemplate.getForObject("http://SERVICE-HI/hi",String.class);
+
+    public String hiService() {
+        return restTemplate.getForObject("http://SERVICE-HI/hi", String.class);
     }
 }

@@ -1,12 +1,15 @@
 package com.springboot.demo.service.impl;
 
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.springboot.demo.service.ITestService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @Descrption TODO
@@ -22,7 +25,8 @@ public class TestServiceImplTest {
 
     @Test
     public void selectTestList() {
-        System.out.println(itestService.getById(1));
-        System.out.println(itestService.selectTestList(new Page(), 1).getSize());
+        //System.out.println(itestService.getById(1));
+        //System.out.println(itestService.selectTestList(new Page(), 1).getSize());
+
     }
 }

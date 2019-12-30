@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 public class HelloServiceImpl implements HelloService {
     @Autowired
     private HelloDao helloDao;
+
     @Override
     public User testConnect() {
         System.out.println("here");

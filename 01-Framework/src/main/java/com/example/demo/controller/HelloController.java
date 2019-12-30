@@ -1,10 +1,12 @@
 package com.example.demo.controller;
+
 import com.example.demo.Utils.JsonUtils;
 import com.example.demo.domain.User;
 import com.example.demo.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -20,7 +22,7 @@ public class HelloController {
     private HelloService helloService;
 
     @GetMapping("/hello")
-    public void sayHello(HttpServletRequest request, HttpServletResponse response)throws IOException {
+    public void sayHello(HttpServletRequest request, HttpServletResponse response) throws IOException {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("application/json;charset=UTF-8");
         User user = helloService.testConnect();
@@ -30,5 +32,7 @@ public class HelloController {
 
 
     @GetMapping("/bye")
-    public String sayBye(){return "bye";}
+    public String sayBye() {
+        return "bye";
+    }
 }

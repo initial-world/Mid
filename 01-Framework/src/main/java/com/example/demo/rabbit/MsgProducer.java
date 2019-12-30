@@ -15,14 +15,15 @@ import java.util.UUID;
  * @Date 2019-07-23  AM 10:16
  */
 //Component
-public class MsgProducer implements RabbitTemplate.ConfirmCallback{
+public class MsgProducer implements RabbitTemplate.ConfirmCallback {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     /**
      * 由于rabbitTemplate的scope属性设置为ConfigurableBeanFactory.SCOPE_PROTOTYPE，所以不能自动注入
      */
-     private RabbitTemplate rabbitTemplate;
+    private RabbitTemplate rabbitTemplate;
+
     /**
      * 构造方法注入rabbitTemplate
      */
@@ -49,11 +50,12 @@ public class MsgProducer implements RabbitTemplate.ConfirmCallback{
 
     /**
      * 消息发送，这里不设置routing_key,因为设置了也无效，发送端的routing_key写任何字符都会被忽略。
+     *
      * @param content
      */
     public void sendAll(String content) {
         CorrelationData correlationId = new CorrelationData(UUID.randomUUID().toString());
-        rabbitTemplate.convertAndSend(RabbitConfig.FANOUT_EXCHANGE,"", content,correlationId);
+        rabbitTemplate.convertAndSend(RabbitConfig.FANOUT_EXCHANGE, "", content, correlationId);
     }
 
     /**

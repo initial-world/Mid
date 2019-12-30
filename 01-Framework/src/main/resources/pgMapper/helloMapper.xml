@@ -3,18 +3,18 @@
 <mapper namespace="com.example.demo.dao.HelloDao">
 
     <sql id="Base_Column_List">
-		name,age,id
-	</sql>
+        name,age,id
+    </sql>
 
     <resultMap id="BaseResultMap" type="com.example.demo.domain.User">
-        <result column="age" property="age" />
-        <result column="id" property="id" />
-        <result column="name" property="name" />
+        <result column="age" property="age"/>
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
     </resultMap>
 
     <select id="testConnect" resultMap="BaseResultMap">
         select
-        <include refid="Base_Column_List" />
+        <include refid="Base_Column_List"/>
         from test
     </select>
 

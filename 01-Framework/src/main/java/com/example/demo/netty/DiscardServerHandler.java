@@ -12,10 +12,11 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
  */
 public class DiscardServerHandler extends ChannelInboundHandlerAdapter {
     @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg){
+    public void channelRead(ChannelHandlerContext ctx, Object msg) {
         // 丢弃收到的数据
         ((ByteBuf) msg).release();
     }
+
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         cause.printStackTrace();
