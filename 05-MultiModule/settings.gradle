@@ -1,1 +1,7 @@
-rootProject.name = 'demo'
+rootProject.name = 'multiModule'
+include 'server'
+include 'facade'
+include 'dto'
+include 'facade:api'
+include 'facade:provider'
+

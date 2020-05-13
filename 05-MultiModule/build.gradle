@@ -1,26 +1,80 @@
 plugins {
-    id 'org.springframework.boot' version '2.1.7.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
     id 'java'
+    id "org.springframework.boot" version "2.1.6.RELEASE"
+    id "io.spring.dependency-management" version "1.0.6.RELEASE"
 }
 
-group = 'com.MultiModule'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
+group 'cn.cx'
+version '1.0-SNAPSHOT'
 
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
-}
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+// 应用于所有依赖的子项目
+subprojects {
+    version '1.0-SNAPSHOT'
+    // 应用插件
+    apply plugin: "java"
+    apply plugin: "org.springframework.boot"
+    apply plugin: "io.spring.dependency-management"
+
+    // 设置编译和运行的jre兼容版本
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+
+    // 字符编码处理
+    def defaultEncoding = 'UTF-8'
+    tasks.withType(AbstractCompile).each { it.options.encoding = defaultEncoding }
+
+    // 生成Java文档的任务
+    javadoc {
+        options.encoding = defaultEncoding
+        options.addBooleanOption('Xdoclint:none', true)
+    }
+
+    // Java编译任务依赖处理资源的任务
+    compileJava.dependsOn(processResources)
+
+    // 指定要运行测试的包
+    test {
+        include "**/repository/**", "**/service/**", "**/controller/**"
+    }
+
+    // spring boot构建任务
+    springBoot {
+        buildInfo()
+    }
+
+    dependencyManagement {
+        // 导入maven依赖管理的bom
+        imports {
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${spring_cloud_version}"
+            mavenBom org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES
+        }
+    }
+
+    /*
+    * 为所有模块指定公共的依赖
+    * 注意这里有些默认不用再指定版本了，已经由上面的dependencyManagement管理了
+    * */
+    dependencies {
+        annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+        annotationProcessor "org.projectlombok:lombok"
+        compileOnly "org.springframework.boot:spring-boot-configuration-processor"
+        compileOnly "org.projectlombok:lombok"
+        implementation "org.apache.commons:commons-lang3"
+        implementation "org.apache.commons:commons-collections4:4.3"
+        implementation "org.springframework.boot:spring-boot-starter-web"
+//        implementation "org.springframework.boot:spring-boot-starter-jdbc"
+        implementation fileTree(dir: 'libs', includes: ['*.jar'])
+        testAnnotationProcessor "org.projectlombok:lombok"
+        testCompileOnly "org.projectlombok:lombok"
+        testImplementation "org.springframework.boot:spring-boot-starter-test"
+    }
 }
